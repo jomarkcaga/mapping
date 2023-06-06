@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bohol Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: skyblue;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+      color: whitesmoke;
+      font-size: 32px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    p {
+      text-align: justify;
+      margin: 10px;
+      color: #333;
+      line-height: 1.5;
+    }
+    #map {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+    }
+    #map img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    #arrow {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      left: 39%;
+      top: 83%;
+      background-color: blue;
+      animation: moveAndBlink 4s infinite;
+    }
+
+    @keyframes moveAndBlink {
+      0% {
+        left: 39%;
+        top: 83%;
+        opacity: 1;
+      }
+      50% {
+        left: 41%;
+        top: 85%;
+        opacity: 0;
+      }
+      100% {
+        left: 39%;
+        top: 83%;
+        opacity: 1;
+      }
+    }
+
+    /* Media Queries for different device sizes */
+
+    /* Small devices (portrait phones) */
+    @media only screen and (max-width: 480px) {
+      h1 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 14px;
+      }
+      #arrow {
+        width: 10px;
+        height: 10px;
+        left: 37%;
+        top: 70%;
+      }
+    }
+
+    /* Medium devices (landscape phones,  tablets) */
+    @media only screen and (min-width: 481px) and (max-width: 768px) {
+      h1 {
+        font-size: 28px;
+      }
+      p {
+        font-size: 16px;
+      }
+      #arrow {
+        width: 15px;
+        height: 15px;
+        left: 38%;
+        top: 70%;
+      }
+    }
+
+    /* Large devices (laptops, desktops) */
+    @media only screen and (min-width: 769px) {
+      h1 {
+        font-size: 32px;
+      }
+      p {
+        font-size: 18px;
+      }
+      #arrow {
+        width: 20px;
+        height: 20px;
+        left: 39%;
+        top: 70%;
+      }
+    }
+  </style>
+  <script>
+    function redirectToProgram() {
+      window.location.href = "file:///C:/Users/Elvie%20C.%20Seit/Downloads/map/dimiao.html";
+    }
+  </script>
+</head>
+<body>
+  <h1>Welcome to Bohol!</h1>
+  <p>Bohol is a province in the Philippines situated in the Central Visayas region. It has a land area of 4,821 km<sup>2</sup> (1,861 sq mi) and a coastline 261 km (162 mi) long².</p>
+  <p>One of the towns in Bohol is Dimiao, which is located on the southern coast of the
+    island. Dimiao has a population of 14,889 people as of 2020. Dimiao is known for its historical and natural attractions, such as the Ermita Ruins, the Punta Baluarte Eco-Museum, the Dimiao Twin Falls, and the Cambagat Cave. Dimiao is also famous for its weaving industry and its annual fiesta celebration.</p>
+
+    <div id="map">
+      <img src="Bohol.jpg" alt="Map of Bohol with Dimiao marked with an arrow">
+      <div id="arrow" onclick="redirectToProgram()"></div>
+    </div>
+    <footer>
+      <p><center>&copy; 2023 Bohol All rights reserved.</center></p>
+      <p><center>Design By: Jomark Cagatin</center></p>
+      <div class="social-media" id="social-media">
+        <a href="https://www.facebook.com/jomark.cagatin" target="_blank" class="facebook">
+          <img src="fb-icon.png" alt="Facebook">
+          <span>Facebook</span>
+        </a>
+        <a href="" target="_blank" class="twitter">
+          <img src="twitter-icon.png" alt="Twitter">
+          <span>Twitter</span>
+        </a>
+        
+        <a href="https://www.instagram.com/cagatinmj/" target="_blank" class="instagram">
+          <img src="instagram-icon.png" alt="Instagram">
+          <span>Instagram</span>
+        </a>
+      </div>
+    </footer>
+    </body>
+    </html>
